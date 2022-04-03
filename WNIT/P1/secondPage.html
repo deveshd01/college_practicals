@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd page</title>
+</head>
+<body>
+    <!-- forms -->
+    <form action="backend.php">
+        name:<input type="name" ><br><br>
+        mob: <input type="name"><br><br>
+        <!-- use DIV tag for BLOCK ELEMENT (separate line) -->
+        <div>       
+            name:<input type="name"><br><br>
+        </div>
+        <div>
+            mob: <input type="name"><br><br>
+        </div>
+ 
+        <label for="name_id">click to add name</label> <br>
+<!-- use label instead of direct text -->
+        <!-- input tags -->
+        <input type="text" placeholder="enter name here " id="name_id"><br>
+        <input type="email" placeholder="enter mail " name="user_mail" >     <br><br>
+<!-- name attribute = this tag get recognised in backEnd by this name -->
+        <input type="date" name="" ><br><br>
+        <label for="check">Are you eligible</label>
+        <input type="checkbox" name="" id="check"><br><br>
+        male<input type="radio" name="gender" >   <!-- same name so can select any one -->
+        female<input type="radio" name="gender" > <br><br>
+        <input type="submit" value="click to submit"> <br><br>
+        <input type="reset" value="reset all fields"><br><br>
+ 
+        <!-- cols & rows states size of box -->
+        <textarea name="" id="" cols="10" rows="10"></textarea>
+ 
+        <label for="name_id">select gender</label>
+<!-- if we click on select gender text then we can write in field with id name_id -->
+ <br><br>
+        <select name="gender" id="gender_id">       <!-- Drop Down -->
+            <option value="mal">male</option>
+            <option value="fmal" selected>female</option> 
+                          <!-- selected is for default value -->
+            <option value="ot">other</option>
+        </select>
+    </form>
+<br><br><br><br><br><br>
+</body>
+</html>
